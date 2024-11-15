@@ -21,9 +21,9 @@ namespace Цай_практическая_8
             InitializeComponent();
         }
         /// <summary>
-        /// Показывает окно с информацией об условии задания
+        /// Показывает окно с информацией
         /// </summary>
-        private void miAboutProgram_Click(object sender, RoutedEventArgs e)
+        private void inf_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Цай Владислав, Практическая 8, Вариант 11 \nСоздать интерфейс - человек, у которого есть имя, функция печати. Создать класс отец, у которого функция печати выводит имя." +
                 "\nСоздать класс ребенок, у которого есть отец, отчество, функция печати выводит имя и отчество." +
@@ -32,14 +32,14 @@ namespace Цай_практическая_8
         /// <summary>
         /// Выход из программы
         /// </summary>
-        private void miExit_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
         /// <summary>
         /// Вывод информации о ребенке и об отце в listBox
         /// </summary>
-        private void miOutputInformation_Click(object sender, RoutedEventArgs e)
+        private void OutputInformation_Click(object sender, RoutedEventArgs e)
         {
             if (father != null)
             {
@@ -63,7 +63,7 @@ namespace Цай_практическая_8
         /// <summary>
         /// Проверка на одинаковые фамилии
         /// </summary>
-        private void miCheckLastnames_Click(object sender, RoutedEventArgs e)
+        private void CheckFamily_Click(object sender, RoutedEventArgs e)
         {
             if (father != null && kid != null)
             {
@@ -77,10 +77,15 @@ namespace Цай_практическая_8
         /// <summary>
         /// Очищение listBox'ов
         /// </summary>
-        private void miClear_Click(object sender, RoutedEventArgs e)
+        private void Clear_Click(object sender, RoutedEventArgs e)
         {
             listKid.Items.Clear();
             listFather.Items.Clear();
+            tbNameKid.Text = null;
+            tbFamilyKid.Text = null;
+            tbMiddlenameKid.Text = null;
+            tbNameFather.Text = null;
+            tbFamilyFather.Text = null;
         }
         /// <summary>
         /// Создание ребенка

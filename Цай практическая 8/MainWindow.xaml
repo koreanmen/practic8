@@ -18,15 +18,13 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Grid.ColumnSpan="2" Height="30">
             <MenuItem Header="Действия" Height="30">
-                <MenuItem Header="Вывести информацию" Click="miOutputInformation_Click"/>
-                <MenuItem Header="Проверить фамилии" Click="miCheckLastnames_Click"/>
-                <MenuItem Header="Очистить" Click="miClear_Click"/>
+                <MenuItem Header="Вывести информацию" Click="OutputInformation_Click"/>
+                <MenuItem Header="Проверить фамилии" Click="CheckFamily_Click"/>
+                <MenuItem Header="Очистить" Click="Clear_Click"/>
                 <Separator/>
-                <MenuItem Header="Выход" Click="miExit_Click"/>
+                <MenuItem Header="Выход" Click="Exit_Click"/>
             </MenuItem>
-            <MenuItem Header="Справка" Height="30">
-                <MenuItem Header="О программе" Click="miAboutProgram_Click"/>
-            </MenuItem>
+            <MenuItem Header="О программе" Click="inf_Click"/>
         </Menu>
         <StackPanel Grid.Row="1" Grid.Column="0">
             <Label Content="Ребенок" Margin="10,0,0,0"/>
