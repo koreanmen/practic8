@@ -12,14 +12,6 @@ namespace Цай_практическая_8
     internal class Father : IHuman, IComparable, ICloneable
     {
         /// <summary>
-        /// Конструктор для инициализации свойств имени и фамилии
-        /// </summary>
-        public Father(string name, string family)
-        {
-            Name = name;
-            Family = family;
-        }
-        /// <summary>
         /// Имя
         /// </summary>
         public string Name { get; set; }
@@ -27,6 +19,14 @@ namespace Цай_практическая_8
         /// Фамилия
         /// </summary>
         public string Family { get; set; }
+        /// <summary>
+        /// Конструктор для инициализации свойств имени и фамилии
+        /// </summary>
+        public Father(string name, string family)
+        {
+            Name = name;
+            Family = family;
+        }
         /// <summary>
         /// Метод выводит имя отца
         /// </summary>
