@@ -12,7 +12,7 @@ namespace Цай_практическая_8
     internal class Kid : Father, IHuman, IComparable, ICloneable
     {
         /// <summary>
-        /// Конструктор, который инициализирует свойтва Firstname, Lastname и Middlename
+        /// Конструктор, который инициализирует свойства Name, Family и Middlename
         /// </summary>
         public Kid(string name, string middlename, string family) : base(name, family)
         {
@@ -34,7 +34,7 @@ namespace Цай_практическая_8
         /// Метод сравнения двух объектов по фамилии
         /// </summary>
         /// <returns>
-        /// 0 если фамилии одинаковые
+        /// 0 если фамилии одинаковые,
         /// -1 если фамилии не одинаковые
         /// </returns>
         public new int CompareTo(object obj)
