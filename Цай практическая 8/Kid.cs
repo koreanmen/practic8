@@ -14,9 +14,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Конструктор, который инициализирует свойтва Firstname, Lastname и Middlename
         /// </summary>
-        /// <param name="name">Имя</param>
-        /// <param name="middlename">Отчество</param>
-        /// <param name="family">Фамилия</param>
         public Kid(string name, string middlename, string family) : base(name, family)
         {
             Middlename = middlename;
@@ -36,7 +33,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Метод сравнения двух объектов по фамилии
         /// </summary>
-        /// <param name="obj">объект для сравнения</param>
         /// <returns>
         /// 0 если фамилии одинаковые
         /// -1 если фамилии не одинаковые

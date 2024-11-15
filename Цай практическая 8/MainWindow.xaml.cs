@@ -12,9 +12,6 @@ using Цай_практическая_8;
 
 namespace Цай_практическая_8
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         Father father;
@@ -26,8 +23,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Показывает окно с информацией об условии задания
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void miAboutProgram_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Цай Владислав, Практическая 8, Вариант 11 \nСоздать интерфейс - человек, у которого есть имя, функция печати. Создать класс отец, у которого функция печати выводит имя." +
@@ -37,8 +32,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Выход из программы
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void miExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -46,8 +39,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Вывод информации о ребенке и об отце в listBox
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void miOutputInformation_Click(object sender, RoutedEventArgs e)
         {
             if (father != null)
@@ -72,8 +63,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Проверка на одинаковые фамилии
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void miCheckLastnames_Click(object sender, RoutedEventArgs e)
         {
             if (father != null && kid != null)
@@ -88,8 +77,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Очищение listBox'ов
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void miClear_Click(object sender, RoutedEventArgs e)
         {
             listKid.Items.Clear();
@@ -98,8 +85,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Создание ребенка
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btCreateKid_Click(object sender, RoutedEventArgs e)
         {
             if (tbNameKid.Text != "" && tbMiddlenameKid.Text != "" && tbFamilyKid.Text != "")
@@ -109,8 +94,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Создание отца
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btCreateFather_Click(object sender, RoutedEventArgs e)
         {
             if (tbNameFather.Text != "" && tbFamilyFather.Text != "")

@@ -14,8 +14,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Конструктор для инициализации свойств имени и фамилии
         /// </summary>
-        /// <param name="Name">Имя</param>
-        /// <param name="Family">Фамилия</param>
         public Father(string name, string family)
         {
             Name = name;
@@ -40,7 +38,6 @@ namespace Цай_практическая_8
         /// <summary>
         /// Метод сравнения двух объектов по фамилии
         /// </summary>
-        /// <param name="obj">объект для сравнения</param>
         /// <returns>
         /// 0 если фамилии одинаковые
         /// -1 если фамилии не одинаковые
